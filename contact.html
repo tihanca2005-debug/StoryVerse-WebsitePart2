@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StoryVerse - Contact</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo"><img src="images/logo.png" style="height:40px;"> StoryVerse</div>
+            <div class="hamburger" onclick="toggleMenu()">MENU</div>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+       <div class="container">
+        <h1>Contact Us</h1>
+        <p>123 Jorissen Street, Braamfontein, Johannesburg</p>
+        <p>011 123 4567</p>
+        <p>info@storyverse.co.za</p>
+        <form onsubmit="return validateForm()" style="margin-top:20px;">
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="Your email" required>
+            <textarea id="message" placeholder="Your message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+       </div>
+        <footer><p>&copy; 2026 StoryVerse, Braamfontein</p></footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
